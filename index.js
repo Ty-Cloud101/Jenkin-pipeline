@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello from API running");
+  res.send("Webhook Test");
 });
 
 app.get("/users", (req, res) => {
@@ -12,3 +12,5 @@ app.get("/users", (req, res) => {
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
+
+res.send("API updated from webhook test");
